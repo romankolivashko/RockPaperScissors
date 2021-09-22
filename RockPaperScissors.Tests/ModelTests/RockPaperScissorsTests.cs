@@ -32,10 +32,7 @@ namespace RockPaperScissors.Tests
       Player playerOne = new Player("bob");
       Player playerTwo = new Player("jill");
       //Act
-      string result = playerOne.Outcome(playerTwo.Play);
-      /*
-      string result = playerOne.Outcome("rock");
-      */
+      string result = Player.Outcome(playerOne.Play, playerTwo.Play);
       //Assert
       Assert.AreEqual("Tied", result);
     }
